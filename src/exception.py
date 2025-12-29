@@ -1,4 +1,5 @@
 import sys 
+from logger import logging
 
 def error_message(error, error_detail:sys):
     error_detail.exc_info()
@@ -16,3 +17,4 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
+    
